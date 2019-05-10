@@ -1,0 +1,35 @@
+body{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chart-container {
+height: 40vh;
+width: 90vw;
+}
+h1{
+    text-align: center;
+}
+
+#label {
+    padding-left: 20px;
+}
+.container {
+    padding: 20px 50px;
+}
+.currency-container{
+    margin-top: 20px;
+}
+select {
+    background-color: white;
+    width: 70px;
+
+}
+button {
+    background-color: white;
+    border: 1px solid grey;
+}
+.currency {
+    float: right;
+    padding: 5px 50px;
+}

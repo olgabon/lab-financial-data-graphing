@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>bitcoin</title>
+</head>
+<body>
+ <h1>Financial Data Graphing</h1>  
+ <div class="currency">
+        <p id="min"></p>
+        <p id="max"></p>
+    </div>
+ <div class="container">  
+
+    <div class="startdate-container">
+        <label for="start-date">From:</label>
+        <input id="start-date" type="date"> 
+
+        <label id="label"for="end-date">To:</label>
+        <input id="end-date" type="date"> <br>
+    </div>
+    <div class="currency-container">
+        <label for="currency">Currency:</label>
+        <select name="currency" id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EURO</option>
+        </select>
+        <button id="send-data" type="submit">Submit</button>
+
+    </div>
+
+
+    <div class="chart-container">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>   
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
